@@ -1,0 +1,13 @@
+Run Index.html
+
+Install dependensies for api using these commands 
+cd api
+npm i
+
+To start the api server run this command
+npm run api
+
+
+After the server started successfully, you can just go and use chat bot feature.
+
+

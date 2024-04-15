@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Selection Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="homePage" class="home-page">
+    <div class="info-box">
+      <p>Welcome to the Product Selection Tool. Here you can find the best products tailored to your needs.</p>
+      <p>Get started by clicking the button below.</p>
+      <button id="startButton">Get Started</button>
+    </div>
+  </div>
+  <div class="container" style="display:none;">
+    <header>
+      <h1>Product Selection Tool</h1>
+    </header>
+    <main>
+      <div id="filterContainer">
+        <button id="chatbotAccessButton">Chatbot Assistant</button>
+        <div id="initialQuestionnaire" class="questionnaire"></div>
+        <div id="subtypeQuestionnaires"></div>
+        <div id="totalPriceDisplay">
+          <p id="totalPrice">Total Price: 0</p>
+        </div>
+      </div>
+      <div id="chatbotContainer" style="display:none;">
+        <button id="backToManualButton">Back to Manual Selection</button>
+        <div id="chatbox"></div>
+        <div>
+          <input type="text" id="userInput" placeholder="Say something..." />
+          <button id="sendButton">Send</button>
+        </div>
+        <div id="loader" class="loader" style="display: none;"></div>
+      </div>
+    </main>
+  </div>
+  <script src="index.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
